@@ -10,7 +10,9 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import run_pilot  # 复用 run_pilot 的全部逻辑，保证同口径
 
-KEY = os.environ.get("DS_KEY", "sk-9276dd6cc104449ba2273186758af868")
+KEY = os.environ.get("DS_KEY", "")
+if not KEY:
+    raise SystemExit("请先在环境变量 DS_KEY 中设置 DeepSeek API key（切勿硬编码进仓库）")
 EP = os.environ.get("DS_ENDPOINT", "https://api.deepseek.com/v1").rstrip("/")
 
 
