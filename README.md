@@ -92,13 +92,3 @@ LongTailChineseRhetoric/
 - **数据集** `data/pilot.jsonl` 及其衍生标注：拟以 **CC BY-SA 4.0** 发布（最终以 [`docs/ETHICS_AND_LICENSE.md`](docs/ETHICS_AND_LICENSE.md) 为准）
 
 ---
-
-## 已知局限（投稿前须披露，详见 `docs/DATASHEET.md` §9）
-
-1. `exposure_bin`（冷门度）由来源类型代理，未完成独立曝光审计；
-2. 98 条原典页码 `source` 仍带「待核」标记（C5）；
-3. hard-negative 由 Qwen 系辅助生成，部分待测模型同族，正在用非 Qwen 家族重写；
-4. YY 类别存在不可消解歧义，主结论锚定 XHY；
-5. 地域偏斜（XHY 晋陕甘 / NY 苏闽）；
-6. 规模 658 条，属 stepping stone，非超大规模；
-7. 部分候选/干扰项由 LLM 辅助产出，经人工审订与三道 QC。
