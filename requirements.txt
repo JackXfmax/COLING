@@ -1,0 +1,31 @@
+# LongTailChineseRhetoric — 运行环境依赖（C4 数据治理）
+
+本项目**跑批与分析脚本仅依赖 Python 标准库**（`urllib` / `json` / `collections` / `concurrent.futures` / `statistics` 等）。
+实测 `scripts/` 下全部脚本无任何必需第三方包 —— 因此本文件为**空依赖占位**，仅为可复现性留痕。
+
+## 验证方式
+
+```bash
+python -c "import sys; print(sys.version)"
+# 开发实测：Python 3.13.14
+```
+
+建议版本：**Python >= 3.10**（开发于 3.13.14）。
+
+## 可选增强（非必需，当前未安装也能跑通）
+
+```
+# numpy>=1.24      # 若改写 bootstrap_ci.py 做数值加速
+# scipy>=1.10      # 若需 Spearman 相关（当前 bootstrap_ci.py 未强制依赖，已在依赖检查中确认）
+
+## 不使用 requirements.txt 安装任何内容即可复现：
+# pip freeze 结果为空（除 pip / setuptools 本体）
+```
+
+## 复现所需的非 pip 依赖
+
+- **API 凭据**（使用者自备，见 `docs/REPRODUCE.md` §2）
+  - `BAILIAN_API_KEY`：阿里百炼（ dashscope 兼容模式）
+  - `OPENLUX_API_KEY`：openlux 中转端点（跨家族模型佐证）
+- **网络访问**：需能出境访问上述两个端点
+- **本地 GPU**（仅 B6 弱模型 4-bit 重跑需要）：实验机 222.19.225.132，2×RTX 4090，Ubuntu 22.04

@@ -1,0 +1,24 @@
+__pycache__/
+.env
+.env.*
+*.log
+results/distractor_prerank_smoke.json
+
+# === 不上传：版权敏感 / 大文件 / 中间产物 / 日志 / 备份 / 本机记忆 ===
+# 永登县志扫描件（版权敏感，19MB）
+*.pdf
+# 所有每模型原始输出与中间 raw（论文只需聚合报告 .md）
+*.jsonl
+# 但主数据集必须上线（白名单）
+!data/pilot.jsonl
+# 旧版归档与日志目录
+results/archive_v6/
+results/archive_v7/
+# 各类备份文件
+*.bak*
+*.bak
+# 本机项目记忆（不公开）
+.workbuddy/
+
+# 临时工作副本
+*.new
