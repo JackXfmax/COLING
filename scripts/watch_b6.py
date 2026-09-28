@@ -11,7 +11,7 @@ import remote_gpu
 
 LOCAL_RAW = os.path.join(ROOT, "results", "b6_raw.jsonl")
 OUT = os.path.join(ROOT, "results", "B6_RESULTS.md")
-REMOTE_RAW = "/home/xufei/b6/b6_raw.jsonl"
+REMOTE_RAW = "/home/<USER>/b6/b6_raw.jsonl"
 TOTAL = 658
 CATNAME = {"xiehouyu": "XHY(歇后语)", "phonetic_play": "YY(谐音)",
            "allusion_idiom": "AID(典故)", "agrarian_proverb": "NY(农谚)"}
@@ -39,7 +39,7 @@ def aggregate(local_raw):
     L.append("子集：pilot.jsonl 全量 **%d** 条（4 类修辞）。" % len(rows))
     L.append("口径与 run_mem_layers.py 一致：mem-L0/L1 自由回忆用 grade_mem（首 40 字子串匹配）；"
              "mem-L2/comp 为 N 选一、PERMS=6 循环置换去位置偏置；MC 判分 = 字母解析 **或** 选项原文回退（应对弱模型不守指令输出原文）。")
-    L.append("运行环境：远程 222.19.225.132，2×RTX 4090，conda `train` 环境（torch2.3+cu121 / transformers4.49 / bnb0.49.2），device_map=auto 跨双卡。")
+    L.append("运行环境：远程 <GPU_HOST_IP>，2×RTX 4090，conda `train` 环境（torch2.3+cu121 / transformers4.49 / bnb0.49.2），device_map=auto 跨双卡。")
     L.append("")
     L.append("| 类别 | n | mem-L0 | mem-L1 | mem-L2 | comp |")
     L.append("|---|---|---|---|---|---|")

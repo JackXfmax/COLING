@@ -1,0 +1,16 @@
+{
+  "perms": 6,
+  "authors": [
+    "gpt-4o"
+  ],
+  "eval_models": [
+    "gpt-4o-mini"
+  ],
+  "n_items": 658,
+  "table": {
+    "gpt-4o-mini": {
+      "OLD": 0.6190476190476191,
+      "NEW": 0.7117527862208713
+    }
+  }
+}

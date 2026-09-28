@@ -28,4 +28,4 @@ python -c "import sys; print(sys.version)"
   - `BAILIAN_API_KEY`：阿里百炼（ dashscope 兼容模式）
   - `OPENLUX_API_KEY`：openlux 中转端点（跨家族模型佐证）
 - **网络访问**：需能出境访问上述两个端点
-- **本地 GPU**（仅 B6 弱模型 4-bit 重跑需要）：实验机 222.19.225.132，2×RTX 4090，Ubuntu 22.04
+- **本地 GPU**（仅 B6 弱模型 4-bit 重跑需要）：实验机 <GPU_HOST_IP>，2×RTX 4090，Ubuntu 22.04

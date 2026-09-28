@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
-PY = "C:/Users/机械革命/.workbuddy/binaries/python/versions/3.13.12/python.exe"
+PY = "C:/Users/<USER>/.workbuddy/binaries/python/versions/3.13.12/python.exe"
 LOG = os.path.join(ROOT, "results", "wait_b2.log")
 POLL = 5 * 60
 MAX_WAIT = 3 * 3600

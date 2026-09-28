@@ -77,10 +77,10 @@ LongTailChineseRhetoric/
 ```bibtex
 @inproceedings{ltcr2026,
   title     = {LongTailChineseRhetoric: Probing the Memory--Comprehension Dissociation of LLMs on Chinese Rural Long-Tail Rhetoric},
-  author    = {Xu, Fei and others},
+  author    = {Anonymous Authors},
   booktitle = {Proceedings of COLING},
   year      = {2026},
-  note      = {Benchmark and evaluation suite: \url{https://github.com/JackXfmax/COLING}},
+  note      = {Benchmark and evaluation suite: \url{https://anonymous.4open.science/r/COLING-3564}},
 }
 ```
 

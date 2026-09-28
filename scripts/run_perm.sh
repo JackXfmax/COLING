@@ -4,16 +4,16 @@
 # 调用量：80 题 x (1 mem + 6 comp) = 560 次/模型，约 6-9 分钟/模型。
 cd ~/ltcr_pilot || exit 1
 export PILOT_PERMS=6
-PY=/home/xufei/miniconda3/envs/train/bin/python
+PY=/home/<USER>/miniconda3/envs/train/bin/python
 
 rm -f results/*.jsonl rundone.flag
 
 $PY -u scripts/run_pilot.py --backend hf \
-  --model-path /home/xufei/models/Qwen2.5-7B-Instruct \
+  --model-path /home/<USER>/models/Qwen2.5-7B-Instruct \
   --models Qwen2.5-7B-Instruct > qwen_perm.log 2>&1
 
 $PY -u scripts/run_pilot.py --backend hf \
-  --model-path /home/xufei/models/LLM-Research/Meta-Llama-3___1-8B-Instruct \
+  --model-path /home/<USER>/models/LLM-Research/Meta-Llama-3___1-8B-Instruct \
   --models Llama-3.1-8B-Instruct > llama_perm.log 2>&1
 
 echo ALLDONE > rundone.flag

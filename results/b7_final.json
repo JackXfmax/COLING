@@ -1,0 +1,26 @@
+{
+  "glm-5.2": {
+    "n_obs": 80,
+    "target": 80,
+    "coverage": 1.0,
+    "extrapolated": false,
+    "metrics": {
+      "l0_ok": 0.275,
+      "l1_ok": 0.4625,
+      "l2_acc": 0.6729166666666667,
+      "comp_acc": 0.8
+    }
+  },
+  "MiniMax-M2.5": {
+    "n_obs": 23,
+    "target": 80,
+    "coverage": 0.2875,
+    "extrapolated": true,
+    "metrics": {
+      "l0_ok": 0.2608695652173913,
+      "l1_ok": 0.2608695652173913,
+      "l2_acc": 0.572463768115942,
+      "comp_acc": 0.43478260869565216
+    }
+  }
+}

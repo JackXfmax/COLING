@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """远程 GPU 助手（paramiko 密码登录）。
 环境变量：
-  REMOTE_HOST  默认 222.19.225.132
+  REMOTE_HOST  默认 <GPU_HOST_IP>
   REMOTE_USER  默认 xf
   REMOTE_PW    密码（必填）
 用法：

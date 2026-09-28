@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """B6 · 本地 4-bit 弱模型对齐评测（自包含，复刻 run_mem_layers.py 四层口径）。
 在远程 GPU（train conda env）运行：
-  /home/xufei/miniconda3/envs/train/bin/python run_b6_local.py \
-      --data pilot.jsonl --model /home/xufei/models/Qwen2.5-7B-Instruct \
+  /home/<USER>/miniconda3/envs/train/bin/python run_b6_local.py \
+      --data pilot.jsonl --model /home/<USER>/models/Qwen2.5-7B-Instruct \
       --out b6_raw.jsonl [--limit N] [--cats xiehouyu]
 四层：mem-L0(自由回忆) / mem-L1(首字提示) / mem-L2(N选一,PERMS=6) / comp(6选一,PERMS=6)
 判分：grade_mem / parse_letter / order_at 完全照搬 run_mem_layers.py，保证口径一致。
@@ -134,7 +134,7 @@ def mc_eval(tok, model, it, field, orders):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", required=True)
-    ap.add_argument("--model", default="/home/xufei/models/Qwen2.5-7B-Instruct")
+    ap.add_argument("--model", default="/home/<USER>/models/Qwen2.5-7B-Instruct")
     ap.add_argument("--out", default="b6_raw.jsonl")
     ap.add_argument("--cats", default="")
     ap.add_argument("--limit", type=int, default=0)

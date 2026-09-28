@@ -1,0 +1,28 @@
+[
+  {
+    "model": "MiniMax-M2.7",
+    "n": 80,
+    "mem": 0.3125,
+    "mem1": 0.2375,
+    "comp": 0.65,
+    "both_correct": 18,
+    "mem_only": 7,
+    "comp_only": 34,
+    "both_wrong": 21,
+    "sep": 0.5125,
+    "out": "D:\\workbuddy工作目录\\2026-09-15-21-31-36\\LongTailChineseRhetoric\\results\\pilot_MiniMax-M2.7.jsonl"
+  },
+  {
+    "model": "gpt-4o-mini",
+    "n": 80,
+    "mem": 0.05,
+    "mem1": 0.225,
+    "comp": 0.7625,
+    "both_correct": 3,
+    "mem_only": 1,
+    "comp_only": 58,
+    "both_wrong": 18,
+    "sep": 0.7375,
+    "out": "D:\\workbuddy工作目录\\2026-09-15-21-31-36\\LongTailChineseRhetoric\\results\\pilot_gpt-4o-mini.jsonl"
+  }
+]
