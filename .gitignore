@@ -22,3 +22,6 @@ results/archive_v7/
 
 # 临时工作副本
 *.new
+
+# 县志页面扫描图（版权材料，不入仓库）
+results/_c5_dl/

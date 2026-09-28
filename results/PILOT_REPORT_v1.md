@@ -97,7 +97,7 @@
 ```bash
 # 服务器（4-bit 跨卡，每卡限 3GiB，不与训练抢显存）
 python scripts/run_pilot.py --backend hf \
-  --model-path /home/xufei/models/Qwen2.5-7B-Instruct \
+  --model-path /home/<USER>/models/Qwen2.5-7B-Instruct \
   --models Qwen2.5-7B-Instruct
 
 # 有 key 之后（OpenAI 兼容接口，本地 vLLM 同样适用）
